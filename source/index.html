@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Седона</title>
-  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin>
+  <title>Drink2Go</title>
+  <link rel="preload" href="fonts/montserrat.woff" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat.woff2" as="font" crossorigin>
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -16,197 +16,367 @@
   <header class="header">
     <nav class="main-nav">
       <a class="main-nav__logo">
-        <img src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
+        <img src="img/icons/logo-2.svg" width="32" height="36" alt="Логотип Drink2Go">
       </a>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
       <ul class="main-nav__list list-reset">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active">
-            Главная
-          </a>
+          <a class="main-nav__link main-nav__link--active">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">
-            Фото и видео
-          </a>
+          <a class="main-nav__link" href="catalog.html">Каталог</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">
-            Форма отзыва
-          </a>
+          <a class="main-nav__link" href="#">Доставка</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="main-nav__link" href="#">О нас</a>
         </li>
       </ul>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Войти</span>
+      </button>
+      <a class="main-nav__logo">
+        <img src="img/icons/icon-user.svg" width="16" height="16" alt="Navigation-Account">
+      </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Корзина</span>
+      </button>
+      <a class="main-nav__logo">
+        <img src="img/icons/icon-basket.svg" width="16" height="16" alt="Navigation-Basket">
+      </a>
     </nav>
   </header>
   <main class="main-container">
-    <section class="welcome">
-      <div class="welcome__title">
-        <img src="img/text-index.svg" width="282" height="214" alt="welcome">
-        <h1 class="visually-hidden">Welcome Sedona</h1>
+    <section class="slider">
+      <h2 class="visually-hidden">Slider</h2>
+      <div class="slider__image">
+        <img src="img/flat-white.jpg" width="280" height="280" alt="Фото слайдера">
       </div>
-      <div class="welcome__description">
-        <p class="welcome__slogan">
-          Седона — небольшой городок в Аризоне, заслуживающий большего!
-        </p>
-        <p class="welcome__intro">
-          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-        </p>
+      <div class="">
+        <p class="slider__badge">Новинка!</p>
+        <p class="slider__heading">Декаф Флэт Уайт</p>
+        <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
+          молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+      </div>
+      <div class="slider__buy">
+        <p class="slider__old-price">295₽</p>
+        <p class="slider__price">225₽</p>
+        <button class="" type="button">Заказать</button>
       </div>
     </section>
-    <section class="advantages">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <ul class="advantages__list list-reset">
-        <li class="advantages__item advantages__item--full">
-          <div class="advantages__item-wrapper">
-            <div class="advantages__wrapper">
-              <h3 class="advantages__title">Настоящий городок</h3>
-              <p class="advantages__number">— №1 —</p>
-              <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            </div>
-            <div class="advantages__image">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)"
-                  srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
-                <img src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260"
-                  alt="городок">
-              </picture>
-            </div>
-          </div>
-          <ul class="advantages__other list-reset">
-            <li class="advantages__other-item">
-              <div class="advantages__other-wrapper advantages__other-wrapper--motel">
-                <h3 class="advantages__other-title">Жилье</h3>
-                <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </div>
-            </li>
-            <li class="advantages__other-item">
-              <div class="advantages__other-wrapper advantages__other-wrapper--food">
-                <h3 class="advantages__other-title">Еда</h3>
-                <p class="advantages__description">Всегда заказывайте фирменный бургер, Вы&nbsp;не&nbsp;разочаруетесь!
-                </p>
-              </div>
-            </li>
-            <li class="advantages__other-item">
-              <div class="advantages__other-wrapper advantages__other-wrapper--souvenir">
-                <h3 class="advantages__other-title">Сувениры</h3>
-                <p class="advantages__description">Не только китайского,<br>но и местного производства!</p>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li class="advantages__item advantages__item--full">
-          <div class="advantages__item-wrapper">
-            <div class="advantages__wrapper ">
-              <h3 class="advantages__title">Там есть мост&nbsp;Дьявола</h3>
-              <p class="advantages__number">— №2 —</p>
-              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>
-            <div class="advantages__image">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-bridge-mobile.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)"
-                  srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                <img src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320"
-                  height="260" alt="мост">
-              </picture>
-            </div>
+    <section class="features">
+      <p class="features__badge">Преимущества</p>
+      <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
+      <ul class="features__list list-reset">
+        <li class="features__item">
+          <div class="features__item-wrapper">
+            <h3 class="features__title">Скорость</h3>
+            <p class="features__description">Готовый напиток всегда под рукой — просто открой банку</p>
           </div>
         </li>
-        <li class="advantages__item">
-          <div class="advantages__wrapper">
-            <h3 class="advantages__title">Небольшая площадь</h3>
-            <p class="advantages__number">— №3 —</p>
-            <p class="advantages__description">Все интересные места находятся очень близко</p>
+        <li class="features__item">
+          <div class="features__item-wrapper">
+            <h3 class="features__title">Удобство</h3>
+            <p class="features__description">Легко помещается и в карман,
+              и в маленькую сумочку</p>
           </div>
         </li>
-        <li class="advantages__item">
-          <div class="advantages__wrapper">
-            <h3 class="advantages__title">Красивая дорога</h3>
-            <p class="advantages__number">— №4 —</p>
-            <p class="advantages__description">Ехать в Седону из Лас&#8209;Вегаса совсем не&nbsp;скучно!</p>
+        <li class="features__item">
+          <div class="features__item-wrapper">
+            <h3 class="features__title">Бодрость</h3>
+            <p class="features__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
           </div>
         </li>
-        <li class="advantages__item">
-          <div class="advantages__wrapper advantages__wrapper--light">
-            <h3 class="advantages__title">Мало туристов</h3>
-            <p class="advantages__number">— №5 —</p>
-            <p class="advantages__description">Большинство едет в Гранд каньон и толпится там</p>
+        <li class="features__item">
+          <div class="features__item-wrapper">
+            <h3 class="features__title">Экологичность</h3>
+            <p class="features__description">Вся упаковка сделана
+              из перерабатываемых материалов</p>
           </div>
         </li>
       </ul>
     </section>
-    <section class="search">
-      <h2 class="search__title">Заинтересовались?</h2>
-      <p class="search__text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в
-        Седоне
-      </p>
-      <a class="search__button button" href="#">Найти гостиницу</a>
+    <section class="catalog">
+      <p class="catalog__badge">Каталог</p>
+      <h2 class="catalog__title">Каталог кофейных напитков</h2>
+      <form method="GET" action="#">
+        <fieldset class="filter-item">
+          <legend>Цена</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="width: 0%; margin-left: 0%">
+                </div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0" style="left: 0%">
+              </div>
+              <div class="toggle toggle-max" tabindex="0" style="left: 79%">
+              </div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">
+                <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                <input type="number" name="max-price" value="900">
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <p class="form-filter">Наличие молока</p>
+        <ul class="grid-list list-reset">
+          <li class="grig-item">
+            <input class="radio-input visually-hidden" type="radio" name="grid-group" value="Адаптивная"
+              id="filter-adaptive" checked>
+            <label class="filter-items" for="filter-adaptive">Неважно</label>
+          </li>
+          <li class="grig-item">
+            <input class="radio-input visually-hidden" type="radio" name="grid-group" value="Фиксированная"
+              id="filter-fixed">
+            <label class="filter-items" for="filter-fixed">Только животное</label>
+          </li>
+          <li class="grig-item">
+            <input class="radio-input visually-hidden" type="radio" name="grid-group" value="Резиновая"
+              id="filter-rubber">
+            <label class="filter-items" for="filter-rubber">Только растительное</label>
+          </li>
+          <li class="grig-item">
+            <input class="radio-input visually-hidden" type="radio" name="grid-group" value="Резиновая"
+              id="filter-rubber">
+            <label class="filter-items" for="filter-rubber">Без молока</label>
+          </li>
+        </ul>
+        <p class="form-filter">Страна произрастания</p>
+        <ul class="countries-list list-reset">
+          <li class="countries-item">
+            <button><span class="on">off</span></button>
+            <button><span class="off">on</span></button>
+            <input id="country-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" checked>
+            <label for="country-toggle">Бразилия</label>
+          </li>
+          <li class="countries-item">
+            <button><span class="on">off</span></button>
+            <button><span class="off">on</span></button>
+            <input id="country-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" checked>
+            <label for="country-toggle">Эфиопия</label>
+          </li>
+          <li class="countries-item">
+            <button><span class="on">off</span></button>
+            <button><span class="off">on</span></button>
+            <input id="country-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" checked>
+            <label for="country-toggle">Колумбия</label>
+          </li>
+          <li class="countries-item">
+            <button><span class="on">off</span></button>
+            <button><span class="off">on</span></button>
+            <input id="country-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" checked>
+            <label for="country-toggle">Коста-Рика</label>
+          </li>
+          <li class="countries-item">
+            <button><span class="on">off</span></button>
+            <button><span class="off">on</span></button>
+            <input id="country-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" checked>
+            <label for="country-toggle">Перу</label>
+          </li>
+        </ul>
+        <button class="button" type="submit" value="#">Применить
+          фильтр</button>
+        <button class="button" type="submit">Сбросить фильтр</button>
+      </form>
+    </section>
+    <section class="sort-block">
+      <h2>Сортировка:</h2>
+      <div class="sort-block-wrapper">
+        <a href="#">по умолчанию</a>
+        <ul class="sort-list list-reset">
+          <li class="sort-list-item"><a href="#">сначала дорогие</a></li>
+          <li class="sort-list-item"><a href="#">сначала дешёвые</a></li>
+          <li class="sort-list-item"><a href="#">высокий рейтинг</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="cards">
+      <ul class="cards-list list-reset">
+        <li class="cards-item">
+          <a class="cards__image">
+            <img src="img/coffee-can-1.jpg" srcset="img/road-mobile@2x.jpg 2x" width="130" height="188" alt="кофе-1">
+          </a>
+          <div class="cards-item__wrapper">
+            <h2 class="cards-item__title">Декаф Флэт Уайт</h2>
+            <p class="cards-item__description">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <div class="cards-buy">
+              <span class="cards-price">225₽</span>
+              <button class="cards-button" type="button">В корзину</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards-item">
+          <a class="cards__image">
+            <img src="img/coffee-can-2.jpg" srcset="img/road-mobile@2x.jpg 2x" width="130" height="188" alt="кофе-2">
+          </a>
+          <div class="cards-item__wrapper">
+            <h2 class="cards-item__title">Декаф Флэт Уайт</h2>
+            <p class="cards-item__description">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <div class="cards-buy">
+              <span class="cards-price">225₽</span>
+              <button class="cards-button" type="button">В корзину</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards-item">
+          <a class="cards__image">
+            <img src="img/coffee-can-3.jpg" srcset="img/road-mobile@2x.jpg 2x" width="130" height="188" alt="кофе-3">
+          </a>
+          <div class="cards-item__wrapper">
+            <h2 class="cards-item__title">Декаф Флэт Уайт</h2>
+            <p class="cards-item__description">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <div class="cards-buy">
+              <span class="cards-price">225₽</span>
+              <button class="cards-button" type="button">В корзину</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards-item">
+          <a class="cards__image">
+            <img src="img/coffee-can-4.jpg" srcset="img/road-mobile@2x.jpg 2x" width="130" height="188" alt="кофе-4">
+          </a>
+          <div class="cards-item__wrapper">
+            <h2 class="cards-item__title">Декаф Флэт Уайт</h2>
+            <p class="cards-item__description">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <div class="cards-buy">
+              <span class="cards-price">225₽</span>
+              <button class="cards-button" type="button">В корзину</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards-item">
+          <a class="cards__image">
+            <img src="img/coffee-can-5.jpg" srcset="img/road-mobile@2x.jpg 2x" width="130" height="188" alt="кофе-5">
+          </a>
+          <div class="cards-item__wrapper">
+            <h2 class="cards-item__title">Декаф Флэт Уайт</h2>
+            <p class="cards-item__description">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <div class="cards-buy">
+              <span class="cards-price">225₽</span>
+              <button class="cards-button" type="button">В корзину</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards-item">
+          <a class="cards__image">
+            <img src="img/coffee-can-6.jpg" srcset="img/road-mobile@2x.jpg 2x" width="130" height="188" alt="кофе-6">
+          </a>
+          <div class="cards-item__wrapper">
+            <h2 class="cards-item__title">Декаф Флэт Уайт</h2>
+            <p class="cards-item__description">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
+            <div class="cards-buy">
+              <span class="cards-price">225₽</span>
+              <button class="cards-button" type="button">В корзину</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+    </section>
+    <section class="pagination catalog-wrapper">
+      <h2 class="visually-hidden">Пагинация</h2>
+      <ul class="pagination-list list-reset">
+        <li class="pagination-item">
+          <a class="pagination-link">Назад</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link">1</a>
+        </li>
+        <li class="pagination-item pagination-item-current">
+          <a class="pagination-link pagination-link-current" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link">Вперед</a>
+        </li>
+      </ul>
     </section>
     <section class="map">
       <h2 class="visually-hidden">карта</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1173246.5835184515!2d-111.69418542379111!3d34.50787828464702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2z0J3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INC_0LDRgNC6INCT0YDQsNC90LQg0JrQsNC90YzQvtC9!5e0!3m2!1sru!2sru!4v1649309050112!5m2!1sru!2sru"
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <div class="map__img">
-        <picture>
-          <source type="image/webp" srcset="img/map@1x.webp 1x, img/map@2x.webp 2x">
-          <img src="img/map@1x.jpg" srcset="img/map@2x.jpg 2x" width="320" height="260" alt="Карта.">
-        </picture>
+        <img src="img/map_bg-mob.jpg" width="320" height="420" alt="Карта">
       </div>
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__hashtag" href="#">#visitsedona</a>
+    <div>
+      <a class="footer__logo">
+        <img src="img/logo-short.svg" width="32" height="36" alt="Логотип Drink2Go">
+      </a>
+    </div>
     <ul class="footer__list list-reset">
       <li class="footer__item">
-        <a class="footer__link footer__link--vkontakte" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Вконтакте</span>
-          <svg width="24" height="24">
+        <a class="footer__link footer__link--vkontakte" href="#">
+          <span class="visually-hidden">VK</span>
+          <svg width="20" height="20">
             <use xlink:href="img/sprite.svg#icon-vk"></use>
           </svg>
         </a>
       </li>
       <li class="footer__item">
-        <a class="footer__link footer__link--telegram" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Телеграм</span>
-          <svg width="24" height="24">
+        <a class="footer__link footer__link--pinterest" href="#">
+          <span class="visually-hidden">Pinterest</span>
+          <svg width="22" height="22">
             <use xlink:href="img/sprite.svg#icon-telegram"></use>
           </svg>
         </a>
       </li>
       <li class="footer__item">
-        <a class="footer__link footer__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Ютуб</span>
-          <svg width="24" height="24">
+        <a class="footer__link footer__link--ok" href="#">
+          <span class="visually-hidden">OK</span>
+          <svg width="20" height="20">
             <use xlink:href="img/sprite.svg#icon-youtube"></use>
           </svg>
         </a>
       </li>
     </ul>
-    <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="footer__copyright-text">Разработано</span>
-      <svg width="27" height="34">
-        <use xlink:href="img/sprite.svg#htmlacademy"></use>
-      </svg>
-    </a>
+    <ul class="footer__list list-reset">
+      <h4>Интернет-магазин</h4>
+      <li class="main-nav__item">
+        <a class="main-nav__link main-nav__link--active">Главная</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="catalog.html">Каталог</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#">Доставка</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#">О нас</a>
+      </li>
+    </ul>
+    <ul>
+      <h4>Медиа</h4>
+      <li>Блог</li>
+      <li>Информация для СМИ</li>
+      <li>Правовая информацияг</li>
+    </ul>
+    <ul>
+      <h4>Контакты</h4>
+      <li>Санкт-Петербург, набережная реки Карповки, дом 5</li>
+      <li>+7 (999) 999-99-99</li>
+    </ul>
+    <div>
+      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="footer__copyright-text">Разработано в</span>
+        <svg width="27" height="34">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
+    </div>
   </footer>
   <script src="js/script.js"></script>
 </body>
